@@ -77,9 +77,8 @@ Enable strict mode in PHP
 <?php
   
   declare(strict_types=1);
-
-  $isActive = true;
-  echo gettype($isActive);  // boolean
+  
+  // ...code
   
 ?>
 ```
