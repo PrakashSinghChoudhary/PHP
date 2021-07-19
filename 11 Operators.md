@@ -109,3 +109,67 @@ It allows to compare variables with each other
    
 ?>
 ```
+
+<br><br>
+
+Error Control Operator: (@)  
+
+It allows to supress any error if added to an expression
+
+```php
+<php
+
+  $x = file('text.txt');  // File doesnt exists, hence shows error
+  $x = @file('text.txt');  // Doesnt show error
+   
+?>
+```
+
+<br><br>
+
+Increment/ Decrement Operators: (++, --)
+
+* Pre increment operator will increment/decrement the value first and then return, 
+post increment operator will return the value first, then increment/decrement
+* They only work on numbers and strings
+
+
+```php
+<php
+
+  $x = 5;  
+  echo $x++;  // 5
+  echo $x;  // 6
+  
+  $x = 5;  
+  echo ++$x;  // 6
+  echo $x;  // 6
+   
+?>
+```
+
+<br><br>
+
+Logical Operators: (&& || ! and or xor)
+
+* They allow to combine multiple operators
+* They only work on numbers and strings
+
+
+```php
+<php
+
+  $x = true;
+  $y = false;
+  echo $x && $y;  // false
+
+  $x = true;
+  $y = false;
+  echo $x || $y;  // true
+  
+  
+  $x = true;
+  echo !$x;  // false
+   
+?>
+```
